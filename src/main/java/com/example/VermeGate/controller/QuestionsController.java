@@ -25,7 +25,6 @@ public class QuestionsController {
         QuestionDto createdQuestionDto = questionService.addQuestion(questionDto);
         if (createdQuestionDto == null ) {
             return  new ResponseEntity<>("Something went wrong", HttpStatus.BAD_REQUEST);
-
         }
         return ResponseEntity.status(HttpStatus.CREATED).body(createdQuestionDto);
 
@@ -46,6 +45,15 @@ public class QuestionsController {
            return ResponseEntity.ok(singleQuestionDto);
 
    }
+/*
+    @GetMapping("/question/{title}")
+    public ResponseEntity<QuestionDto> getQuestionByTitle(@PathVariable String title) {
+        QuestionDto questionDto = questionService.getQuestionByTitle(title);
+        return ResponseEntity.ok(questionDto );
+
+    } */
+
+
 }
 
 

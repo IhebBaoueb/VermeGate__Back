@@ -11,4 +11,7 @@ public interface QuestionService {
     AllQuestionResponseDto getAllQuestions(int pageNumber);
 
     SingleQuestionDto getQuestionById(Long questionId);
+
+    //QuestionDto getQuestionByTitle(String questionTitle);
+
 }

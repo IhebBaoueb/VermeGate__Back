@@ -77,6 +77,16 @@ public class QuestionServiceImpl implements QuestionService{
         return singleQuestionDto;
 
     }
+/*
+    @Override
+    public QuestionDto getQuestionByTitle(String questionTitle) {
+        Optional<Questions> optionalQuestion =  questionRepository.findByTitle(questionTitle);
+        SingleQuestionDto singleQuestionDto = new SingleQuestionDto();
+        optionalQuestion.ifPresent(question ->  singleQuestionDto.setQuestionDto(question.getQuestionDto()));
+        return singleQuestionDto;
+    } */
+
+
 
 
 }

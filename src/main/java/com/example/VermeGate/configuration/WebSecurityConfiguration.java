@@ -33,7 +33,7 @@ public class WebSecurityConfiguration {
                 .csrf()
                 .disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/authenticate" , "/sign-up","/api/question","/api/questions/{pageNumber}","/api/answer","/api/question/{questionId}").permitAll()
+                .requestMatchers("/authenticate" , "/sign-up","/api/question","/api/questions/{pageNumber}","/api/answer","/api/question/{questionId}","/api/question/{questionTitle}").permitAll()
                 .and()
                 .authorizeHttpRequests()
                 .requestMatchers("/api/**")
