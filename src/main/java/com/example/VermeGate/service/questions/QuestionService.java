@@ -12,6 +12,5 @@ public interface QuestionService {
 
     SingleQuestionDto getQuestionById(Long questionId);
 
-    //QuestionDto getQuestionByTitle(String questionTitle);
 
 }
